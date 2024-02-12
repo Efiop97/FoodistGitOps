@@ -17,11 +17,12 @@ foodist:
 postgresql:
   auth:
     username: igor
-    existingSecret: postgresql-secret
+    database: foodist
+    existingSecret: "postgresql-secret"
     secretKeys:
       adminPasswordKey: postgres-admin-password
-      userPasswordKey: postgres-repl-password
-      replicationPasswordKey: postgres-user-password
+      userPasswordKey: postgres-user-password
+      replicationPasswordKey: postgres-repl-password
     database: foodist
   architecture: standalone
   primary:
