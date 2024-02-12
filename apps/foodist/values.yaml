@@ -19,10 +19,10 @@ postgresql:
   auth:
     username: igor
     existingSecret: "postgresql-secret"
-      secretKeys:
-        adminPasswordKey: postgres-admin-password
-        userPasswordKey: postgres-repl-password
-        replicationPasswordKey: postgres-user-password
+    secretKeys:
+      adminPasswordKey: postgres-admin-password
+      userPasswordKey: postgres-repl-password
+      replicationPasswordKey: postgres-user-password
     database: foodist
   architecture: standalone
   primary:
