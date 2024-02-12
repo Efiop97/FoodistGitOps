@@ -9,4 +9,4 @@ data:
   DB_PORT: {{ .Values.postgresql.service.ports.postgresql | quote }}
   PORT: {{ .Values.foodist.config.port | quote }}
   LOG_LEVEL: {{ .Values.foodist.config.logLevel | quote }}
-  FLASK_ENV: "production"
+  APP_ENV: "production"
