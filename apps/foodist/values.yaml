@@ -17,7 +17,6 @@ foodist:
 postgresql:
   auth:
     username: igor
-    database: foodist
     existingSecret: "postgresql-secret"
     secretKeys:
       adminPasswordKey: postgres-admin-password
