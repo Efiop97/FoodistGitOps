@@ -14,6 +14,8 @@ foodist:
     tls:
       enabled: true
       staging: false
+
+      
 postgresql:
   auth:
     username: igor

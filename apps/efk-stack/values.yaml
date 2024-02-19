@@ -39,7 +39,6 @@ elasticsearch:
 
 fluent-bit:
   enabled: true
-
   config:
     service: |
       [SERVICE]

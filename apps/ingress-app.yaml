@@ -8,9 +8,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://kubernetes.github.io/ingress-nginx
-    targetRevision: 4.9.0
-    chart: ingress-nginx
+    repoURL: git@github.com:Efiop97/FoodistGitOps.git
+    path: "apps/ingress-controller"
+    targetRevision: HEAD
     helm:
       values: |
         installCRDs: true

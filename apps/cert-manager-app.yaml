@@ -8,9 +8,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://charts.jetstack.io'  
-    targetRevision: 1.13.3 
-    chart: cert-manager
+    repoURL: git@github.com:Efiop97/FoodistGitOps.git
+    path: "apps/cert-manager"
+    targetRevision: HEAD
     helm:
       values: |
         installCRDs: true
