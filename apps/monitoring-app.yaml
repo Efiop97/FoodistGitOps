@@ -10,7 +10,7 @@ spec:
   sources:
     - repoURL: git@github.com:Efiop97/FoodistGitOps.git
       targetRevision: HEAD
-      path: "apps/kps/kube-prometheus-stack-55.8.1.tgz"   
+      path: "apps/kps"   
       helm:
         valueFiles:
           - "$mycharts/apps/monitoring-values.yaml"
