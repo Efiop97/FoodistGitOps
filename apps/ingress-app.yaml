@@ -14,6 +14,23 @@ spec:
     helm:
       values: |
         installCRDs: true
+        controller:
+          metrics:
+            enabled: true
+          podAnnotations:
+            prometheus.io/scrape: "true"
+            prometheus.io/port: "10254"
+          extraArgs:
+            enable-ssl-passthrough: "true"
+          ingressClassResource:
+            name: nginx
+            enabled: true
+            default: true
+          ingressClass: nginx
+          resources:
+            requests:
+              cpu: 250m
+              memory: 512Mi
   destination:
     server: https://kubernetes.default.svc
     namespace: ingress-nginx
