@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: git@github.com:Efiop97/FoodistGitOps.git
-    path: "apps/ingress-controller"
+    path: "apps/ingress-controller/ingress-nginx-4.9.0.tgz"
     targetRevision: HEAD
     helm:
       values: |
