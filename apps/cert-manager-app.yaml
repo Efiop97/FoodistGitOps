@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: git@github.com:Efiop97/FoodistGitOps.git
-    path: "apps/cert-manager"
+    path: "apps/cert-manager/cert-manager-v1.13.3.tgz"
     targetRevision: HEAD
     helm:
       values: |
