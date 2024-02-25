@@ -1,5 +1,5 @@
 foodist:
-  image: 644435390668.dkr.ecr.us-east-1.amazonaws.com/igor-foodist:1.0.20
+  image: 644435390668.dkr.ecr.us-east-1.amazonaws.com/igor-foodist:1.0.21
   replicaCount: 3
   config:
     port: '5000'
@@ -14,12 +14,10 @@ foodist:
     tls:
       enabled: true
       staging: false
-
-      
 postgresql:
   auth:
     username: igor
-    existingSecret: "postgresql-secret"
+    existingSecret: postgresql-secret
     secretKeys:
       adminPasswordKey: postgres-admin-password
       userPasswordKey: postgres-user-password
